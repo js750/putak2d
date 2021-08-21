@@ -182,8 +182,8 @@ function partice(x, y, type) {
             this.width = this.size;
             this.height = this.size;
             this.lifeTime = random(10, 20);
-            this.xVel = random(-3, 3);
-            this.yVel = random(-3, 3);
+            this.xVel = random(-3, 3) / 10;
+            this.yVel = random(-3, 3) / 10;
 
         }
 
@@ -193,8 +193,8 @@ function partice(x, y, type) {
             this.width = this.size;
             this.height = this.size;
             this.lifeTime = random(10, 20);
-            this.xVel = random(-3, 3);
-            this.yVel = random(-3, 3);
+            this.xVel = random(-3, 3) / 10;
+            this.yVel = random(-3, 3) / 10;
 
         }
 
@@ -204,8 +204,8 @@ function partice(x, y, type) {
             this.width = this.size;
             this.height = this.size;
             this.lifeTime = random(10, 20);
-            this.xVel = random(-3, 3);
-            this.yVel = random(-3, 3);
+            this.xVel = random(-3, 3) / 10;
+            this.yVel = random(-3, 3) / 10;
 
         }
 
@@ -346,8 +346,8 @@ function loop() {
 
         if (particles[performParticle]) {
 
-            particles[performParticle].x += particles[performParticle].xVel;
-            particles[performParticle].y += particles[performParticle].yVel;
+            particles[performParticle].x += particles[performParticle].xVel * deltaTime;
+            particles[performParticle].y += particles[performParticle].yVel * deltaTime;
 
             particles[performParticle].lifeTime--;
 
